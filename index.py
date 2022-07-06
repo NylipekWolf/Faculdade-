@@ -19,6 +19,9 @@ class Objeto:
             print('Digitou errado')
         while True:
             data = input('Digite a data da compra :')
+            if len(data) == 6:
+                data = date(20 +int(data[-2:]), data[2:4], data[:2])
+            print(data)
             break
 
 while True:
