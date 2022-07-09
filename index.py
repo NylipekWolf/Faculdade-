@@ -1,13 +1,16 @@
-from datetime import date
+from datetime import date, datetime
 
 class Objeto:
-    def __init__(self, tipo, data, valor):
+    def __init__(self,descricao, tipo, data, valor):
         self.tipo = tipo
         self.data = data
         self.valor = valor
+        self.descricao = descricao
         pass
 
     def criacao():
+        descricao = input('Digite a descrição : ')
+        
         while True:
             tipo = input('Seria uma 1.Despesa ou 2.Receita :')
             if tipo.isnumeric():
@@ -27,5 +30,5 @@ class Objeto:
 while True:
     print('Bem vindo ao sistema')
     Objeto.criacao()
-
+    
         
