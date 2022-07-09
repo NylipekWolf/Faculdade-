@@ -25,4 +25,7 @@ while True:
     print('Bem vindo ao sistema')
     Objeto.criacao()
 
+#isso vai dar trabalhooooooooooooooo
+#hot dog completo é melhor
+
         
