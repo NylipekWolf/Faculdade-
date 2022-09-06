@@ -1,4 +1,6 @@
 from datetime import date, datetime
+from hashlib import new
+from tracemalloc import stop
 
 class Objeto:
     def __init__(self,descricao, tipo, data, valor):
@@ -9,8 +11,8 @@ class Objeto:
         pass
 
     def criacao():
-        descricao = input('Digite a descrição : ')
-        
+
+        descricao = input('Digite a descrição : ')      
         while True:
             tipo = input('Seria uma 1.Despesa ou 2.Receita :')
             if tipo.isnumeric():
@@ -26,10 +28,17 @@ class Objeto:
                 data = date(20 +int(data[-2:]), int(data[2:4]), int(data[:2]))
             print(data)
             break
+        while True: 
+            valor = float(input('Digite o valor :'))
+            break
+        Objeto = Objeto(descricao=descricao, tipo=tipo, data=data, valor=valor)
+        stop    
+            
 
 while True:
     print('Bem vindo ao sistema')
     Objeto.criacao()
+    print(Objeto)
     
 
 
