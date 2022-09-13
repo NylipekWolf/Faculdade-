@@ -1,5 +1,5 @@
 .calculator_keys{
     display: grid;
+    width: 400px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    background: black;
 }
