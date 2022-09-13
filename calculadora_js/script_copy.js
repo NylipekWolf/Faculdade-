@@ -6,11 +6,18 @@ keys.addEventListener('click', e =>{
         const key = e.matches('button')
         const action = key.dataset.action
 
+        if(!action){
+            console.log('number key!')
+        }
         if(action === 'calculate'){
             const sencondValeu = displayedNum
-            if (action === 'add' || action === 'subtract' || action === 'multiply' || action === 'divide'
+            if (action === 'add' ||
+                action === 'subtract' ||
+                action === 'multiply' ||
+                action === 'divide'
             ){
-                calculator.dataset.firstValue = displayedNum
+                console.log("operador key!")
+                /*calculator.dataset.firstValue = displayedNum
                 calculator.dataset.operator = action
                 if(action === 'calculate'){
                     const firstValue = calculator.dataset.firstValue
@@ -18,10 +25,19 @@ keys.addEventListener('click', e =>{
                     const secondValue = displayedNum
 
                     display.textContent = calculate(firstValue, operator, secondValue)
-                }
+                */}
+            if (action === "decimal"){
+                console.log("decimal key!");
+            }
+            if (action === "clear") {
+                console.log("clear key!");
+            }
+            if (action === "calculate") {
+                console.log(("equal key"));
+            }
             }
         }
         
     }
-})
+)
 
