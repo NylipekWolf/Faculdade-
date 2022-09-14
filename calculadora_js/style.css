@@ -3,4 +3,7 @@
     width: 400px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.
+.numeric{
+    background-color: black;
+    color: white;
+}
