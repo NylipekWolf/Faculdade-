@@ -4,6 +4,6 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .numeric{
-    background-color: black;
+    background-color: rgb(255, 0, 0);
     color: white;
 }
